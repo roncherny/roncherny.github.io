@@ -17,14 +17,16 @@
             margin: 0 auto;
             padding: 20px;
         }
-        img {
-            display: block;
-            margin: 10px 0 20px 0;
+        img.profile {
+            float: left;
+            width: 180px;       /* smaller image size */
+            margin: 0 20px 20px 0; /* space around image */
             border-radius: 8px;
         }
         h1, h2 {
             margin-top: 30px;
             margin-bottom: 10px;
+            clear: both; /* ensures headings don’t wrap awkwardly */
         }
         ul {
             list-style-type: disc;
@@ -37,7 +39,7 @@
 </head>
 <body>
     <h1>Ron Cherny</h1>
-    <img src="Edited.png" alt="Ron Cherny" width="300">
+    <img src="Edited.png" alt="Ron Cherny" class="profile">
 
     <p>
         I am an undergraduate student at the University of Waterloo studying Pure Mathematics and Combinatorics.
