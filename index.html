@@ -1,105 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ron Cherny</title>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
-    </script>
-    <script type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        img.profile {
-            float: left;
-            width: 180px;       /* smaller image size */
-            margin: 0 20px 20px 0; /* space around image */
-            border-radius: 8px;
-        }
-        h1, h2 {
-            margin-top: 30px;
-            margin-bottom: 10px;
-            clear: both; /* ensures headings don’t wrap awkwardly */
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 15px;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ron Cherny</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; max-width: 900px; margin: 48px auto; padding: 0 20px; line-height:1.6; color:#111; }
+    header { text-align:center; margin-bottom: 24px; }
+    h1 { margin: 8px 0 4px; font-size: 2.2rem; }
+    img.avatar { width:160px; height:160px; object-fit:cover; border-radius:50%; display:block; margin: 12px auto; }
+    main { margin-top: 16px; }
+    section { margin-bottom: 22px; }
+    ul { margin-left: 1.2rem; }
+    a { color: #0b63d6; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .meta { color:#555; font-size:0.95rem; }
+    footer { margin-top: 40px; color:#666; font-size:0.9rem; text-align:center; }
+    pre.slides { background:#f6f6f6; padding:8px; border-radius:6px; overflow:auto; }
+  </style>
 </head>
 <body>
+  <header>
     <h1>Ron Cherny</h1>
-    <img src="Edited.png" alt="Ron Cherny" class="profile">
+    <img class="avatar" alt="Ron Cherny" src="https://roncherny.github.io/images/ron.jpg" />
+    <p class="meta">I am an undergraduate student at the University of Waterloo studying Pure Mathematics and Combinatorics. My main interests are in algebraic combinatorics and representation theory. On this page, you’ll find some quick documentation of the work I’ve done, and hopefully in the future, I’ll muster enough energy to add some cool interactive math tools.</p>
+  </header>
 
-    <p>
-    I am an undergraduate student at the University of Waterloo studying Pure Mathematics and Combinatorics. 
-    My main interests are in algebraic combinatorics and representation theory. On this page, you’ll find some quick documentation of the work I’ve done, 
-    and hopefully in the future, I’ll muster enough energy to add some cool interactive math tools.
-    </p>
-    
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            I am currently working under the supervision of 
-            <a href="https://www.math.uwaterloo.ca/~m3kenned/" target="_blank">Matthew Kennedy</a>, 
-            exploring applications of the non-commutative convexity framework in various areas of mathematics. 
-        </li>
-        <li>
-            I have also been supervised by 
-            <a href="https://www.math.uwaterloo.ca/~opecheni/" target="_blank">Oliver Pechenik</a>
-            together with 
-            <a href="https://stephan.pfannerer-mittas.net/" target="_blank">Stephan Pfannerer</a>, 
-            investigating the structure of promotion permutations. These permutations arise naturally from recording
-            row indices during the promotion process on rectangular Young tableaux. We are interested in these permutations 
-            because they appear to encode combinatorial data underlying a correspondence between rectangular Young tableaux 
-            and web diagrams. Such web diagrams are used to study invariant spaces of representations of the quantum group 
-            $U_q(\mathrm{SL}_r)$, providing a diagrammatic framework for constructing rotation-invariant bases.
-        </li>
-        <li>
-            I collaborated with Yohan Song under the supervision of
-            <a href="https://www.math.uwaterloo.ca/~msatrian/index.html" target="_blank">Matthew Satriano</a>
-            on a combinatorial instance of the Gerstenhaber problem. The problem asks whether, given three commuting 
-            $n \times n$ matrices, the dimension of the algebra they generate is always bounded by $n$. We proved this 
-            bound holds for a broad class of matrices generated from certain combinatorial structures.
-        </li>
-    </ul>
+  <main>
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>I am currently working under the supervision of <a href="http://www.math.uwaterloo.ca">Matthew Kennedy</a>, exploring applications of the non-commutative convexity framework in various areas of mathematics.</li>
+        <li>I have also been supervised by <a href="http://www.math.uwaterloo.ca">Oliver Pechenik</a> together with <a href="http://stephan.pfannerer-mittas.net">Stephan Pfannerer</a>, investigating the structure of promotion permutations. These permutations arise naturally from recording row indices during the promotion process on rectangular Young tableaux. We are interested in these permutations because they appear to encode combinatorial data underlying a correspondence between rectangular Young tableaux and web diagrams.</li>
+        <li>I collaborated with Yohan Song under the supervision of <a href="http://www.math.uwaterloo.ca">Matthew Satriano</a> on a combinatorial instance of the Gerstenhaber problem. The problem asks whether, given three commuting <code>n × n</code> matrices, the dimension of the algebra they generate is always bounded by <code>n</code>. We proved this bound holds for a broad class of matrices generated from certain combinatorial structures.</li>
+      </ul>
+    </section>
 
-    <h2>Talks</h2>
-    <ul>
-        <li>
-            I presented a talk on the Gerstenhaber problem in the Algebraic and Enumerative Combinatorics 
-            <a href="https://uwaterloo.ca/combinatorics-and-optimization/events/algebraic-enumerative-combinatorics-connor-baetz-arnav-kumar" target="_blank">seminar</a> 
-            at the University of Waterloo, focusing on whether the dimension of the algebra generated by three commuting 
-            $n \times n$ matrices is less than $n$. 
-            <a href="Gerstenhaber talk - slides.pdf" target="_blank">Slides</a>
-        </li>
-        <li>
-            I also gave a talk on extending the framework of the first rotation-invariant $U_q(\mathrm{SL}_4)$ web basis 
-            to higher rank, by studying promotion permutations and extracting structural information about the webs. 
-            This talk was presented at <a href="https://canadam.ca/2025schedule" target="_blank">CanaDAM 2025</a> 
-            in the Web Graphs session. 
-            <a href="Web talk.pdf" target="_blank">Slides</a>
-        </li>
-    </ul>
+    <section>
+      <h2>Talks</h2>
+      <ul>
+        <li>I presented a talk on the Gerstenhaber problem in the Algebraic and Enumerative Combinatorics seminar at the University of Waterloo, focusing on whether the dimension of the algebra generated by three commuting <code>n × n</code> matrices is less than <code>n</code>. <a href="#">Slides</a></li>
+        <li>I also gave a talk on extending the framework of the first rotation-invariant <code>U_q(SL_4)</code> web basis to higher rank, by studying promotion permutations and extracting structural information about the webs. This talk was presented at <a href="https://canadam.ca">CanaDAM 2025</a> in the Web Graphs session. <a href="#">Slides</a></li>
+      </ul>
+    </section>
 
-    <h2>Published Work</h2>
-    <ul>
-        <li>
-            Matthew Satriano, Ron Cherny, and Yohan Song. 
-            <em>On the Algebra Generated by Three Commuting Matrices: Combinatorial Cases</em>. 
-            The Electronic Journal of Combinatorics, Volume 31, Issue 4 (2024). 
-            <a href="https://www.combinatorics.org/ojs/index.php/eljc/article/view/v31i4p43" target="_blank">PDF</a>
-        </li>
-    </ul>
+    <section>
+      <h2>Published Work</h2>
+      <ul>
+        <li>Matthew Satriano, Ron Cherny, and Yohan Song. <em>On the Algebra Generated by Three Commuting Matrices: Combinatorial Cases.</em> The Electronic Journal of Combinatorics, Volume 31, Issue 4 (2024). <a href="http://www.combinatorics.org">PDF</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    Built with ❤️
+  </footer>
 </body>
 </html>
